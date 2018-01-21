@@ -1,0 +1,23 @@
+{
+	"version": 0,
+	"dependencies": [
+		{
+			"importpath": "github.com/Azure/azure-pipeline-go/pipeline",
+			"repository": "https://github.com/Azure/azure-pipeline-go",
+			"vcs": "git",
+			"revision": "9804b770d6810999e2bcb7480fb509504e72b2ba",
+			"branch": "master",
+			"path": "/pipeline",
+			"notests": true
+		},
+		{
+			"importpath": "github.com/Azure/azure-storage-blob-go/2016-05-31/azblob",
+			"repository": "https://github.com/Azure/azure-storage-blob-go",
+			"vcs": "git",
+			"revision": "8eaa850fea8595fc05285a968e24d30740953bd0",
+			"branch": "master",
+			"path": "/2016-05-31/azblob",
+			"notests": true
+		}
+	]
+}
