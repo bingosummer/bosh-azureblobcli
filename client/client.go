@@ -52,8 +52,8 @@ func (client *AzureBlobBlobstore) Put(ctx context.Context, src *os.File, dest st
 
 	_, err := blob.UploadFileToBlockBlob(ctx, src, blobURL,
 		blob.UploadToBlockBlobOptions{
-			BlockSize:   4 * 1024 * 1024,
-			Parallelism: 16,
+			BlockSize:   client.config.BlockSize,
+			Parallelism: client.config.Parallelism,
 		})
 	if err != nil {
 		return err

@@ -14,6 +14,8 @@ type AzureBlobCli struct {
 	StorageAccountAccessKey string `json:"storage_account_access_key"`
 	ContainerName           string `json:"container_name"`
 	CredentialsSource       string `json:"credentials_source"`
+	BlockSize		uint64 `json:"block_size"`
+	Parallelism		uint16 `json:"parallelism"`
 }
 
 // StaticCredentialsSource specifies that credentials will be supplied using storage_account_name and storage_account_access_key
